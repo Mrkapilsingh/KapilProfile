@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil's Profile</title>
+
+    <!--fav icon for (broweser icon)-->
+    <link rel="icon" type="image/jpg" href="images/kicon.jpg">
+
+
+    <!--Online bootstrap file linking-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!--Online Java Script file linking-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        type="text/css" />
+
+    <style>
+        .background {
+            background-color: #e8e8e8;
+        }
+
+        .box1 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 150px;
+            font-family: Arial, Rounded MT, Bold;
+            align-content: center;
+        }
+
+        .k {
+            color: red;
+            font-weight: bold;
+        }
+
+        .apil {
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        /* .navigation
+        {
+            border-radius: 10px;
+             font-size: 17px;
+            transition: .7s ease-in-out;
+            color: white;
+        
+        }
+        */
+        .navigation:hover {
+            /* transform: scale(.9); */
+            transition: ease-in-out !important;
+            color: rgb(251, 9, 9);
+        }
+
+        /* color: black !important; */
+        /* text-decoration: underline; */
+
+
+        .bg {
+            background-color: #000;
+        }
+
+        /* About section css start */
+
+        .about h3 {
+            color: white;
+            text-align: center;
+            /* font-weight: bold; */
+        }
+
+        .pad1 {
+            padding: 30px;
+        }
+
+        .h3 {
+            color: aliceblue;
+            font-size: 30px;
+        }
+
+        .about p {
+            color: #e8e8e8;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        /* .cardd:hover {
+            
+             color: #e8e8e8 !important;
+            background-color: red; */
+
+
+        .what-card {
+            background-color: transparent;
+            transition: .3s ease-in-out;
+        }
+
+        .what-card:hover {
+            transform: scale(.95);
+        }
+
+        .fa-html5:hover {
+            color: black !important;
+        }
+
+        .name {
+            color: red;
+        }
+
+        h2 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .brand {
+            color: black;
+            font-size: 25px;
+        }
+
+        .brand:hover {
+            color: red;
+            transform: scale(1.5);
+            transition: ease !important;
+        }
+
+        /* body {
+            background-color: #000;
+
+        } */
+
+        .back1 {
+            background-color: rgb(245, 242, 242);
+        }
+
+        .back2 {
+            background-color: rgb(237, 233, 233);
+        }
+
+        /* Hobbies */
+        .my {
+            text-align: center;
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-family: Calibri Light;
+            font-weight: 800;
+        }
+
+        .textt {
+            font-size: 10px;
+            font-family: Calibri Light;
+            justify-content: left;
+            color: black !important;
+
+
+        }
+
+        .cardtext {
+            font-size: 10px;
+            font-family: Calibri Light;
+            justify-content: left;
+            line-height: 20px;
+            color: #5e5d5d;
+        }
+
+        .favo {
+            color: rgb(33, 190, 190);
+            font-size: 25px;
+
+        }
+
+        .hob {
+            color: rgb(12, 252, 252);
+        }
+
+        .pad {
+            padding-top: 65px;
+        }
+
+        .lines {
+            color: aquamarine;
+        }
+
+        .outer-box {
+            overflow: hidden;
+        }
+
+        .card img {
+            transition: transform .3s ease-in-out;
+        }
+
+        .card:hover img {
+            cursor: crosshair;
+            /* transition: 3s ease; */
+            transform: scale(1.2);
+        }
+
+        .card:hover {
+            background-color: rgb(255, 223, 223);
+        }
+
+        .card:hover button {
+            background-color: red !important;
+
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card button {
+            background-color: black;
+            color: white;
+            transition: .3s ease-in-out;
+        }
+
+        .card button:hover {
+            transform: scale(.9);
+            color: white;
+        }
+
+        .food {
+            text-align: center;
+        }
+
+
+        /* Education */
+        .edu {
+            color: aqua;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: rgb(96, 8, 8);
+        }
+
+        .space {
+            padding-top: 70px;
+        }
+
+        .font {
+            text-align: center;
+        }
+
+        .detail {
+            font-size: 15px;
+            font-weight: 100;
+            color: #5e5d5d;
+        }
+
+        .tabs {
+            color: #e8e8e8;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .fa-insta:hover {
+            color: red !important;
+        }
+
+        .navigate-end {
+            color: #000 !important;
+        }
+
+        .navigate-end:hover {
+            color: red !important;
+        }
+
+
+
+
+        /* White Skill Card */
+        .skill-card-white {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 25px 5px 20px 5px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transition: 0.3s ease;
+            box-shadow: 0px -1px 0px #8A2BE2;
+            cursor: pointer;
+        }
+        .skill-card-white-parent
+        {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 25px 0px 0px 0px;;
+            /* display: flex; */
+            gap: 20px;
+            align-items: center;
+            transition: 0.3s ease;
+            box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        /* Icon Styling */
+        .skill-card-white .icon i {
+            font-size: 55px;
+            transition: 0.3s ease;
+        }
+
+        /* Text Styling */
+        .skill-card-white .content h3 {
+            color: #000;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .skill-card-white .content p {
+            margin-top: 6px;
+            color: #333;
+            font-size: 15px;
+        }
+
+        /* Hover Effects */
+        .skill-card-white:hover {
+            /* box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25); */
+        }
+
+        .skill-card-white:hover .icon i {
+            transform: scale(1.25);
+        }
+
+
+
+        /* Skill Progress */
+        .skill-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            transition: transform 0.25s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .skill-card h4 {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .skill-percent {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            opacity: 0.85;
+        }
+
+        .skill-progress {
+            height: 12px;
+            background: #f0f0f0;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .skill-progress .progress-bar {
+            height: 100%;
+            transition: width 1.4s ease;
+            border-radius: 50px;
+        }
+
+
+
+        .skill-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            transition: transform 0.25s ease;
+            text-align: center;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .skill-card h4 {
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .skill-progress {
+            height: 12px;
+            background: #f0f0f0;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .skill-progress .progress-bar {
+            height: 100%;
+            transition: width 1.3s ease;
+            border-radius: 50px;
+        }
+    </style>
+
+<body>
+    <div>
+        <!--background image-->
+        <div class="background" id="home">
+
+            <!--Navigation Bar Start-->
+            <!--First div container start (Home section)-->
+            <nav class="navbar  navbar-expand-sm  bg fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-brand navb">
+                        <h3 class="k">P<span class="apil">ORTFOLIO</span></h3>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                        <span class="navbar-toggler-icon "
+                            style="border-radius: 5px; background-color: rgb(208, 20, 20);"></span>
+
+                    </button>
+
+                    <div class="collapse  navbar-collapse justify-content-end" id="Navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link navigation js-scroll-trigger"
+                                    style="color: Red;;font-weight: normal;" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#education">EDUCATION</a></li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#skills">SKILLS</a></li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#certificate">CERTIFICATE</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#hobbies">HOBBIES</a> </a></li>
+                            <li class="nav-item"><a class="nav-link navigation tabs js-scroll-trigger"
+                                    style="font-size: 17px;font-weight: normal;" href="#contact">GET IN TOUCH</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            </nav>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6 mt-1"><img src="images/kk1.jpg" class="img-fluid" style="width: 1500px;">
+                    </div>
+                    <div class="col-md-6 box1 ">HI, I AM <span class="name"> KAPIL SINGH</span>
+                        <!-- <h4>I am A Coder</h4> -->
+                        <p class="detail">
+                            I am Kapil Singh, currently pursuring my Bechlelor of Computer Application.
+                            I am passionate about technology and enjoy learning new skills in Programming.
+                            I am working to build a strong foundation in computer science for my future career.
+                            <!-- I always try to improve myself and stay dedicated to my goals.
+                            I believe in Hard work, Positivity, and continus Learining. -->
+                        </p>
+
+                        <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><i
+                                class="fa-brands fa-instagram brand"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin brand"></i></a>
+
+                        <a href="https://youtube.com/@kapilkivines001?si=yRYuhocHKhctSBN8"><i
+                                class="fa-brands fa-youtube brand"></i></a>
+
+                        <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
+                                class="fa-brands fa-x-twitter brand"></i></a>
+
+                        <a href="https://github.com/Mrkapilsingh/HTML-Files"><i
+                                class="fa-brands fa-github brand"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Body section Start-->
+
+    <!--second div container start (about section)-->
+    <div class="container-fluid pad1 back1">
+        <div class="about" id="about">
+            <div class="row pt-5 ">
+                <div class="col-md-5">
+                    <img src="images/kapil.png" class="img-fluid" style="height: 500px; width:500px;">
+                </div>
+                <div class="col-md-7" style="align-content: center;">
+                    <h1 class="my pb-5">ABOUT ME</h1>
+                    <p class="col-md-12 textt"> Hi, I'm Kapil Singh Chouhan. I am 21 years old. I’m a passionate learner
+                        who loves turning ideas into meaningful work.
+                        I enjoy exploring new skills, improving myself, and creating things that add value to people’s
+                        lives.
+                        With a practical mindset and a positive attitude, I always try to bring creativity into
+                        everything I do.
+                        I believe in consistency, hard work, and learning from every experience.
+                        Whether it’s technology, design, or personal growth, I love taking on new challenges.
+                        My goal is simple: keep growing and help others grow along the way. My vision is to build a life
+                        filled with learning achievements, and Positive impact. Every day, i try to become a better
+                        version of myself and inspire others to do the same.
+                    </p>
+
+                    <p class="col-md-12 textt">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--(Education section start)-->
+
+    <div class="container-fluid space back1" id="education">
+        <h1 class=" my pb-5">MY EDUCATION.</h1>
+
+        <div class="row mx-auto" style="width: 95%;">
+            <!--Seconadry section-->
+            <div class="col-md-6 col-lg-3 secondary">
+                <div class="card" style="width: rem;">
+                    <div class="outer-box">
+                        <img src="images/secondary.jpg" class="card-img-top " alt="..." style="height: 267px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Secondary</h3>
+                        <p class="card-text font">I did my secondary education from Mahatma Gandhi Govt. sr. sec.
+                            School, Ajmer.</p>
+                        <hr />
+                        <a href="https://maps.app.goo.gl/WVso79AkPvYJ9H4T8"><button class="btn">Visit</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 Secondary">
+                <!--sr. secondary-->
+                <div class="card" style="width: rem;">
+                    <div class="outer-box">
+                        <img src="images/srsecondary.jpg" class="card-img-top " alt="..." style="height: 267px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Sr.Secondary</h3>
+                        <p class="card-text font">I did my Sr.Secondary eduation from Topdara Govt. sr. sec. School,
+                            Topdara, Ajmer</p>
+                        <hr />
+                        <a href="https://share.google/gyVQlhpfX6DxzqlIG"><button class="btn">Visit</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <!--iti section-->
+                <div class="card" style="width: rem;">
+                    <div class="outer-box">
+                        <img src="images/igmenz.jpg" class="card-img-top " style="height: 267px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Technical</h3>
+                        <p class="card-text font">I did my Technical eduation In Electrical field from Igmenz private
+                            ITI, Madar, Ajmer</p>
+                        <hr />
+                        <a href="https://igmenzitc.com/"><button class="btn">Visit</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <!--Graduation section-->
+                <div class="card" style="width: rem;">
+                    <div class="outer-box">
+                        <img src="images/starinfotech.jpg" class="card-img-top eduimg" style="height: 267px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Graduation</h3>
+                        <p class="card-text font">I am pursuring BCA from Star Infotech College Ajmer. And I love Coding
+                            and </p>
+                        <hr />
+                        <a href="https://starinfotechcollege.com/"><button class="btn">Visit</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid back1" id="skills">
+        <h1 class="my" style="padding-top: 100px; ">MY SKILLS</h1>
+
+        <div class="row g-4 mx-auto" style="width: 80%;padding-bottom: 100px;">
+
+            <!-- Skill Card 1 -->
+           <div class="col-sm-12 col-md-6 col-lg-4">
+
+               <div class=" skill-card-white-parent text-center">
+                 <div class="d-flex" style="justify-content: center;">
+                    <i class="fa-brands fa-microsoft fa-2x" style="color:#8A2BE2;"></i>
+                    <h3>MS OFFICE</h3>
+                </div>
+
+                <div class="skill-card-white">                    
+                    <div class="content">
+                        <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+
+            <!-- Skill Card 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+               <div class=" skill-card-white-parent text-center">
+                 <div class="d-flex" style="justify-content: center;">
+                    <i class="fa-brands fa-microsoft fa-2x" style="color:#8A2BE2;"></i>
+                    <h3>MS OFFICE</h3>
+                </div>
+
+                <div class="skill-card-white">                    
+                    <div class="content">
+                        <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+
+            <!-- Skill Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+               <div class=" skill-card-white-parent text-center">
+                 <div class="d-flex" style="justify-content: center;">
+                    <i class="fa-brands fa-microsoft fa-2x" style="color:#8A2BE2;"></i>
+                    <h3>MS OFFICE</h3>
+                </div>
+
+                <div class="skill-card-white">                    
+                    <div class="content">
+                        <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- HTML -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <h4 style="color: orangered;">HTML</h4>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" style="width: 95%; background: orangered;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <h4 style="color: blue;">CSS</h4>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" style="width: 85%; background: blue;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOOTSTRAP -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <h4 style="color: purple;">Bootstrap</h4>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" style="width: 89%; background: purple;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C LANGUAGE -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-card">
+                    <h4 style="color: rgb(36,127,237);">C Language</h4>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" style="width: 65%; background: rgb(36,127,237);"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--Certificate section start-->
+    <div class="container-fluid back1">
+        <h1 class="my pb-5" id="certificate" style="padding-top: 70px;">MY CERTIFICATES</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+
+                <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="images/certificate1.jpg" class="img-fluid ">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/certificate3.jpg" class="img-fluid"
+                                style="height: 400px; width: 70%; margin: auto; display: block;">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/certificate2.jpg" class="img-fluid"
+                                style="height: 400px; width: 70%; margin: auto; display: block;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev" style="color: #000;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 ">
+                <div class="p-3">
+                    <strong>Google Cloud A.I Certificate </strong><br>
+                    <p>I hold an official AI Certificate from Google Cloud, which strengthened my understanding of
+                        modern artificial intelligence technologies.
+                        Through this program, I learned how AI models work and how they can be used in real-world
+                        applications.
+                    </p><br><br>
+
+                    <strong>Microsoft Excel Dashboard for Beginners </strong><br>
+                    <p>I completed a two-year Electrician Diploma from ITI, where I learned the fundamentals of
+                        electrical systems and safety.
+                        During this course, I gained hands-on experience in wiring, installation, and maintenance of
+                        electrical equipment.
+
+                    </p><br><br>
+
+                    <strong>NCVT Certificate</strong><br>
+                    <p>I completed a two-year Electrician Diploma from ITI, where I learned the fundamentals of
+                        electrical systems and safety.
+                        During this course, I gained hands-on experience in wiring, installation, and maintenance of
+                        electrical equipment.
+
+                    </p><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- (Hobbies section)-->
+
+    <div class="container-fluid back1">
+        <div class="row pad mx-auto" id="hobbies" style="width: 80%;">
+            <h1 class="my">MY HOBBIES.</h1>
+            <h2 class="favo pb-5">Lets meet with My Favorit Hobbies</h2>
+            <!-- <h2 class="hob">Hobbies</h2> -->
+            <br /><br /><br />
+
+            <!--First img-->
+            <div class="col-md-6 col-lg-3 hobby">
+                <div class="card">
+                    <div class="outer-box">
+                        <img src="images/cooking.jpg" class="card-img-top" style="height: 280px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Cooking</h3>
+                        <p class="card-text">I love trying new recipes and Experimenting with diffrent tastes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second img-->
+            <div class="col-md-6 col-lg-3 hobby">
+                <div class="card">
+                    <div class="outer-box">
+                        <img src="images/photography.jpg" class="card-img-top" style="height: 280px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Photography</h3>
+                        <p class="card-text">Photography is my way of freezing memories and expressing creativity</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Third img-->
+            <div class="col-md-6 col-lg-3 hobby">
+                <div class="card">
+                    <div class="outer-box">
+                        <img src="images/riding.jpg" class="card-img-top" alt="..." style="height: 280px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Riding</h3>
+                        <p class="card-text">Riding is one of my Favorite hobby. it feel me free </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fourth img-->
+            <div class="col-md-6 col-lg-3 hobby">
+                <div class="card">
+                    <div class="outer-box">
+                        <img src="images/traveling.jpg" class="card-img-top" alt="..." style="height: 280px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="food">Traveling</h3>
+                        <p class="card-text">I love visiting new destination and creating beatuiful Memories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer section (Contact Section)-->
+
+    <div class="container-fluid back2 mx-auto p-5" id="contact">
+        <h1 class="my " style="padding-top: 50px; ">GET-IN-TOUCH</h1>
+        <center>
+            <h5>I am always open to New Opertunaties and exciting projects. Let's Connect and bring your ideas to life
+                with
+                impectful Creative. </h5>
+        </center>
+        <div class="row pt-5 mt-5 mx-auto" style="width: 80%;">
+            <div class="col-md-4 mb-4">
+                <h3 style="color:red;font-size: 30px;">Contact Me</h3>
+                <div class="pad" style=" padding-top:20px;">
+                    <div class="row">
+                        <div class="col-sm-2 align-content-center">
+                            <i class="fa-brands fa-google fa-envelope fa-2x" style="color:red;"></i>
+                        </div>
+
+                        <div class="col-sm-10 col-md-10 col-lg-10">
+                            <div class="card-body">
+                                <h5 class="card-title " style=" text-decoration: none; color: #000">Email
+                                </h5>
+                                <p class="card-text cardtext" style="color:black;font-size: medium;">
+                                    kapilsinghchouhan9778@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-sm-2 align-content-center">
+                            <strong><i class="fa-brands fa-whatsapp fa-2x" style="color:green;"></i></strong>
+                        </div>
+
+                        <div class="col-sm-10 col-md-10 col-lg-10">
+                            <div class="card-body">
+                                <h5 class="card-title " style="text-decoration: none; color: black;">Leave a message
+                                </h5>
+                                <p class="card-text cardtext" style="color: black ;font-size: medium;">9351694106</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <ul style="list-style: none; padding: 0px;">
+                    <h3 style="color:red;">Navigate</h3>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#home">WHO I AM</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#hobbies">HOBBIES</a></li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#certificate">CERTIFICATE</a></li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#education">EDUCATION </a></li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#contact">GET IN TOUCH</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3 style="color:red;">Connect</h3>
+                <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><i
+                        class="fa-brands fa-instagram brand fa-insta instagram"></i></a>
+                <a
+                    href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="fa-brands fa-linkedin brand fa-insta" style="color:rgb(87, 76, 252);"></i></a>
+
+                <a href="https://youtube.com/@kapilkivines001?si=yRYuhocHKhctSBN8"><i
+                        class="fa-brands fa-youtube brand fa-insta" style="color:red;"></i></a>
+
+                <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
+                        class="fa-brands fa-x-twitter brand fa-insta" style="color:black;"></i></a>
+
+                <a href="https://github.com/Mrkapilsingh/HTML-Files"><i class="fa-brands fa-github brand fa-insta"
+                        style="color:black;"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="p-3" style="text-align: center; margin-bottom: -40px; background-color: #000; color: white;"> &copy; 2025
+        Kapil Singh Chouhan. All rights are reserved.
+    </p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+</body>
+
+</html>
