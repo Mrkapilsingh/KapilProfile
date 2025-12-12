@@ -151,13 +151,11 @@
             font-weight: 800;
         }
 
-        .textt {
-            font-size: 10px;
-            font-family: Calibri Light;
-            justify-content: left;
+        .texttt{
+            font-size: 22px !important;
+            font-family: calibri light !important;
+            text-align: center !important;
             color: black !important;
-
-
         }
 
         .cardtext {
@@ -329,9 +327,7 @@
         /* Hover Effects */
         /* .skill-card-white:hover {
             /* box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25); */
-         */
-
-        .skill-card-white:hover .icon i {
+        */ .skill-card-white:hover .icon i {
             transform: scale(1.25);
         }
 
@@ -407,6 +403,59 @@
             transition: width 1.3s ease;
             border-radius: 50px;
         }
+
+         @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .block{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
+        }
+
+
+          @keyframes blocks{
+            from{
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        .blocks{
+            animation: blocks linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
+        }
+
+          @keyframes blocks1{
+            from{
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        .blocks1{
+            animation: blocks1 linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
+        }
+
     </style>
 
 <body>
@@ -477,7 +526,7 @@
                         <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
                                 class="fa-brands fa-x-twitter brand"></i></a>
 
-                        <a href="https://github.com/Mrkapilsingh/HTML-Files"><i
+                        <a href="https://www.github.com"><i
                                 class="fa-brands fa-github brand"></i></a>
 
                     </div>
@@ -489,7 +538,7 @@
     <!--Body section Start-->
 
     <!--second div container start (about section)-->
-    <div class="container-fluid pad1 back1">
+    <div class="container-fluid pad1 block back1">
         <div class="about" id="about">
             <div class="row pt-5 ">
                 <div class="col-md-5">
@@ -497,7 +546,7 @@
                 </div>
                 <div class="col-md-7" style="align-content: center;">
                     <h1 class="my pb-5">ABOUT ME</h1>
-                    <p class="col-md-12 textt"> Hi, I'm Kapil Singh Chouhan. I am 21 years old. I’m a passionate learner
+                    <p class="col-md-12 texttt"> Hi, I'm Kapil Singh Chouhan. I am 21 years old. I’m a passionate learner
                         who loves turning ideas into meaningful work.
                         I enjoy exploring new skills, improving myself, and creating things that add value to people’s
                         lives.
@@ -509,10 +558,6 @@
                         filled with learning achievements, and Positive impact. Every day, i try to become a better
                         version of myself and inspire others to do the same.
                     </p>
-
-                    <p class="col-md-12 textt">
-
-                    </p>
                 </div>
             </div>
         </div>
@@ -520,8 +565,8 @@
 
     <!--(Education section start)-->
 
-    <div class="container-fluid space back1" id="education">
-        <h1 class=" my pb-5">MY EDUCATION.</h1>
+    <div class="container-fluid space back1 blocks" id="education">
+        <h1 class=" my pb-5">MY EDUCATION</h1>
 
         <div class="row mx-auto" style="width: 95%;">
             <!--Seconadry section-->
@@ -587,7 +632,7 @@
         </div>
     </div>
 
-    <div class="container-fluid back1" id="skills">
+    <div class="container-fluid back1 blocks1" id="skills">
         <h1 class="my" style="padding-top: 100px; ">MY SKILLS</h1>
 
         <div class="row g-4 mx-auto" style="width: 80%;padding-bottom: 100px;">
@@ -603,7 +648,7 @@
 
                     <div class="skill-card-white">
                         <div class="content">
-                            <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                            <p>Its work together with CSS for design and JavaScript for functionality .</p>
                         </div>
                     </div>
                 </div>
@@ -621,7 +666,7 @@
 
                     <div class="skill-card-white">
                         <div class="content">
-                            <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                            <p>With CSS you can make a website responsive and visually attractive.</p>
                         </div>
                     </div>
                 </div>
@@ -639,7 +684,7 @@
 
                     <div class="skill-card-white">
                         <div class="content">
-                            <p>I use MS-office tools to improve productivity and deliver accurate, high-qulity work.</p>
+                            <p>I use MS-office tools to improve productivity and deliver accurate work.</p>
                         </div>
                     </div>
                 </div>
@@ -650,12 +695,12 @@
     </div>
 
 
-    <div class="container my-5">
+    <div class="container my-5 blocks1 ">
 
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center ">
 
             <!-- HTML -->
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 ">
                 <div class="skill-card">
                     <h4 style="color: orangered;">HTML</h4>
                     <div class="progress skill-progress">
@@ -713,12 +758,12 @@
 
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="certificate3.jpg" class="img-fluid"
-                                style="height: 400px; width: 70%; margin: auto; display: block;">
+                                style="height: 430px; width: 100%; margin: auto; display: block;">
                         </div>
 
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="certificate2.jpg" class="img-fluid"
-                                style="height: 400px; width: 70%; margin: auto; display: block;">
+                                style="height: 400px; width: 80%; margin: auto; display: block;">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -743,11 +788,11 @@
                     </p><br><br>
 
                     <strong>Microsoft Excel Dashboard for Beginners </strong><br>
-                    <p>I completed a two-year Electrician Diploma from ITI, where I learned the fundamentals of
-                        electrical systems and safety.
-                        During this course, I gained hands-on experience in wiring, installation, and maintenance of
-                        electrical equipment.
-
+                    <p>I have completed a certified course in Microsoft Excel Dashboard for Beginners.
+                        This certificate shows my ability to create basic and clear dashboards in Excel.
+                        I learned how to use charts, tables, and formulas to present data visually.
+                        The course helped me understand data analysis and reporting techniques.
+                       
                     </p><br><br>
 
                     <strong>NCVT Certificate</strong><br>
@@ -766,10 +811,10 @@
 
     <!-- (Hobbies section)-->
 
-    <div class="container-fluid back1">
+    <div class="container-fluid back1 block">
         <div class="row pad mx-auto" id="hobbies" style="width: 80%;">
-            <h1 class="my">MY HOBBIES.</h1>
-            <h2 class="favo pb-5">Lets meet with My Favorit Hobbies</h2>
+            <h1 class="my">MY HOBBIES</h1>
+            <h2 class="favo pb-5">Lets meet with My Favorite Hobbies</h2>
             <!-- <h2 class="hob">Hobbies</h2> -->
             <br /><br /><br />
 
@@ -777,7 +822,7 @@
             <div class="col-md-6 col-lg-3 hobby">
                 <div class="card">
                     <div class="outer-box">
-                        <img src="cooking.jpg" class="card-img-top" style="height: 280px;">
+                        <img src="cooking.jpg" class="card-img-top " style="height: 280px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Cooking</h3>
@@ -867,7 +912,7 @@
                             <div class="card-body">
                                 <h5 class="card-title " style="text-decoration: none; color: black;">Leave a message
                                 </h5>
-                                <p class="card-text cardtext" style="color: black ;font-size: medium;">9351694106</p>
+                                <p class="card-text cardtext" style="color: black ;font-size: medium;">935XXXXX06</p>
                             </div>
                         </div>
                     </div>
@@ -877,16 +922,18 @@
                 <ul style="list-style: none; padding: 0px;">
                     <h3 style="color:red;">Navigate</h3>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
-                            style="font-size: 17px;font-weight: normal;" href="#home">WHO I AM</a>
+                            style="font-size: 17px;font-weight: normal;" href="#home">HOME</a>
                     </li>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#about">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
-                            style="font-size: 17px;font-weight: normal;" href="#hobbies">HOBBIES</a></li>
+                            style="font-size: 17px;font-weight: normal;" href="#education">EDUCATION</a></li>
+                    <li class="nav-item"><a class="nav-link navigate-end tabs"
+                            style="font-size: 17px;font-weight: normal;" href="#skills">SKILLS</a></li>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#certificate">CERTIFICATE</a></li>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
-                            style="font-size: 17px;font-weight: normal;" href="#education">EDUCATION </a></li>
+                            style="font-size: 17px;font-weight: normal;" href="#hobbies">HOBBIES</a></li>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#contact">GET IN TOUCH</a></li>
                 </ul>
@@ -905,7 +952,7 @@
                 <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
                         class="fa-brands fa-x-twitter brand fa-insta" style="color:black;"></i></a>
 
-                <a href="https://github.com/Mrkapilsingh/HTML-Files"><i class="fa-brands fa-github brand fa-insta"
+                <a href="https://www.github.com"><i class="fa-brands fa-github brand fa-insta"
                         style="color:black;"></i></a>
             </div>
         </div>
