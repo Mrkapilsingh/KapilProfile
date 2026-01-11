@@ -30,7 +30,7 @@
             color: rgb(0, 0, 0);
             font-weight: bold;
             font-size: 50px;
-            margin-top: 150px;
+            margin-top: 50px;
             font-family: Arial, Rounded MT, Bold;
             align-content: center;
         }
@@ -60,10 +60,6 @@
             color: rgb(251, 9, 9);
         }
 
-        /* color: black !important; */
-        /* text-decoration: underline; */
-
-
         .bg {
             background-color: #000;
         }
@@ -73,7 +69,6 @@
         .about h3 {
             color: white;
             text-align: center;
-            /* font-weight: bold; */
         }
 
         .pad1 {
@@ -90,12 +85,6 @@
             text-align: left;
             font-size: 20px;
         }
-
-        /* .cardd:hover {
-            
-             color: #e8e8e8 !important;
-            background-color: red; */
-
 
         .what-card {
             background-color: transparent;
@@ -121,7 +110,7 @@
 
         .brand {
             color: black;
-            font-size: 25px;
+            font-size: 27px;
         }
 
         .brand:hover {
@@ -129,11 +118,6 @@
             transform: scale(1.5);
             transition: ease !important;
         }
-
-        /* body {
-            background-color: #000;
-
-        } */
 
         .back1 {
             background-color: rgb(245, 242, 242);
@@ -146,16 +130,15 @@
         /* Hobbies */
         .my {
             text-align: center;
-            /* font-family: 'Courier New', Courier, monospace; */
             font-family: Calibri Light;
             font-weight: 800;
         }
 
         .texttt {
-            font-size: 22px !important;
-            font-family: calibri light !important;
-            text-align: center !important;
-            color: black !important;
+            font-size: 24px !important;
+            font-family: sans-serif !important;
+            text-align: justify !important;
+            color: rgb(55, 13, 13) !important;
         }
 
         .cardtext {
@@ -167,7 +150,7 @@
         }
 
         .favo {
-            color: rgb(33, 190, 190);
+            color: black;
             font-size: 25px;
 
         }
@@ -193,17 +176,16 @@
         }
 
         .card:hover img {
-            cursor: crosshair;
-            /* transition: 3s ease; */
-            transform: scale(1.2);
+            transition: 1s ease-in-out;
+            transform: scale(1.5);
         }
 
         .card:hover {
-            background-color: rgb(255, 223, 223);
+            background-color: rgb(255, 254, 254);
         }
 
         .card:hover button {
-            background-color: red !important;
+            background-color: rgb(62, 47, 47) !important;
 
         }
 
@@ -211,16 +193,16 @@
             border: none;
         }
 
-        .card button {
+        /* .card button {
             background-color: black;
             color: white;
             transition: .3s ease-in-out;
-        }
+        } */
 
-        .card button:hover {
+        /* .card button:hover {
             transform: scale(.9);
             color: white;
-        }
+        } */
 
         .food {
             text-align: center;
@@ -233,6 +215,28 @@
             text-align: center;
             font-weight: bold;
         }
+
+        .edu-card img {
+            width: 120px;
+            object-fit: contain;
+            padding-left: 20px;
+        }
+
+        .edu-card-1 img {
+            width: 140px;
+            /* object-fit: cover; */
+            /* padding-left: 20px; */
+            border-radius: 100% !important;
+        }
+
+        .edu-sec-1 {
+            text-align: center;
+            height: 220px;
+            padding-top: 50px;
+        }
+
+
+
 
         .btn {
             width: 100%;
@@ -257,20 +261,23 @@
         }
 
         .tabs {
-            color: #e8e8e8;
+            color: #e8e8e8 !important;
         }
 
+        /* Education cards */
+
         .card-text {
-            font-size: 12px;
+            font-size: 15px;
+            margin-bottom: 130px;
         }
 
         .fa-insta:hover {
             color: red !important;
         }
 
-        .navigate-end {
+        /* .navigate-end {
             color: #000 !important;
-        }
+        } */
 
         .navigate-end:hover {
             color: red !important;
@@ -288,8 +295,6 @@
             gap: 20px;
             align-items: center;
             transition: 0.3s ease;
-            box-shadow: 0px -1px 0px black;
-            cursor: pointer;
         }
 
         .skill-card-white-parent {
@@ -297,12 +302,10 @@
             border-radius: 14px;
             padding: 25px 0px 0px 0px;
             ;
-            /* display: flex; */
             gap: 20px;
             align-items: center;
             transition: 0.3s ease;
             box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
         }
 
         /* Icon Styling */
@@ -324,10 +327,8 @@
             font-size: 15px;
         }
 
-        /* Hover Effects */
-        /* .skill-card-white:hover {
-            /* box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25); */
-        */ .skill-card-white:hover .icon i {
+
+        .skill-card-white:hover .icon i {
             transform: scale(1.25);
         }
 
@@ -421,12 +422,30 @@
             animation-timeline: view();
             animation-range: entry 0%;
         }
+
+        .edu-sec {
+            text-align: center;
+        }
+
+        .edu-logo {
+            max-width: 120px;
+        }
+
+        /* Media quries */
+
+        @media (max-width: 752px) {
+
+            .edu-sec {
+                display: flex !important;
+                justify-content: center !important;
+            }
+        }
     </style>
 
 <body>
     <div>
         <!--background image-->
-        <div class="background" id="home">
+        <div class="background">
 
             <!--Navigation Bar Start-->
             <!--First div container start (Home section)-->
@@ -465,7 +484,7 @@
                 </div>
             </nav>
 
-            <div class="container">
+            <div class="container" id="home" style="padding-top: 5px;">
                 <div class="row mt-5">
                     <div class="col-md-6 mt-1"><img src="kk1.jpg" class="img-fluid" style="width: 1500px;">
                     </div>
@@ -476,22 +495,25 @@
                             I am passionate about technology and enjoy learning new skills in Programming.
                             I am working to build a strong foundation in computer science for my future career.
                         </p>
+                        <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><img
+                                src="insta.jpg" class="img-fluid" style="height: 30px;"></a>
 
-                        <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><i
-                                class="fa-brands fa-instagram brand"></i></a>
                         <a
-                            href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                class="fa-brands fa-linkedin brand"></i></a>
+                            href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                                src="linkdin.png" class="img-fluid" style="height: 30px;"></a>
 
-                        <a href="https://youtube.com/@kapilkivines001?si=yRYuhocHKhctSBN8"><i
-                                class="fa-brands fa-youtube brand"></i></a>
+                        <a href="http://www.youtube.com/@codingwith-kapil"><img src="youtub.png" class="img-fluid"
+                                style="height: 35px;"></a>
 
-                        <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
-                                class="fa-brands fa-x-twitter brand"></i></a>
+                        <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><img src="x2.jpg"
+                                class="img-fluid" style="height: 45px;"></a>
 
-                        <a href="https://www.github.com"><i class="fa-brands fa-github brand"></i></a>
+                        <a href="https://discord.gg/P9fyaKDv"><img src="discode.jpg" style="height: 35px;"></a>
 
-                        <a href="https://discord.gg/P9fyaKDv"><i class="fa-brands fa-discord brand"></i></a>
+                        <a href="https://www.github.com"><img src="git.png" class="img-fluid"
+                                style="height: 35px; border-radius: 100px;"></i></a>
+
+
 
                     </div>
                 </div>
@@ -502,18 +524,18 @@
     <!--Body section Start-->
 
     <!--second div container start (about section)-->
-    <div class="container-fluid pad1 block back1" style="padding-top: 200px;">
-        <div class="about" id="about">
+    <div class="container-fluid pad1 block back1" style="margin-top: 300px;">
+        <div class="about" id="about" style="padding-top: 60px;">
             <div class="row pt-5 ">
                 <div class="col-md-5">
                     <img src="aboutgif.gif" class="img-fluid" style="height: 440px; width:500px;">
                 </div>
                 <div class="col-md-7" style="align-content: center;">
                     <h1 class="my pb-5">ABOUT ME</h1>
-                    <p class="col-md-12 texttt"> Hi, I'm Kapil Singh Chouhan. I’m a passionate
+                    <p class="col-md-12 texttt"> Hi, I'm Kapil Singh Chouhan. I'm a Passionate
                         learner
                         I believe in consistency, hard work, and learning from every experience.
-                        Whether it’s technology, design, or personal growth, I love taking on new challenges.
+                        Whether it's technology, design, or personal growth, I love taking on new challenges.
                         My goal is simple: keep growing and help others grow along the way. My vision is to build a life
                         filled with learning achievements, and Positive impact. Every day, i try to become a better
                         version of myself and inspire others to do the same.
@@ -525,83 +547,77 @@
 
     <!--(Education section start)-->
 
-    <div class="container-fluid space back1 block" id="education" style="padding-top: 130px;">
-        <h1 class=" my pb-5">MY EDUCATION</h1>
-
+    <div class="container-fluid space back1 block" id="education" style="margin-top: 300px;">
+        <h1 class="my" style="padding-top: 30px;">MY EDUCATION</h1>
+        <br />
         <div class="row mx-auto" style="width: 95%;">
             <!--Graduation section start-->
 
-            <div class="col-md-6 col-lg-3" style="padding-bottom: 30px;">
-              
-                <div class="card" style="width: rem;">
-                    <div class="outer-box">
-                        <img src="graduation.jpeg" class="card-img-top eduimg" style="height: 267px;">
+            <div class="col-md-6 col-lg-3" style="padding-bottom: 40px;">
+
+                <div class="card" style="border-radius: 40px;">
+                    <div class="outer-box edu-card edu-sec" style="height: 250px;">
+                            <img src="starlogo-removebg-preview.png" class="card-img-top edu-logo" style="height: 300px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Graduation</h3>
-                        <p class="card-text font">I am pursuring BCA from Star Infotech College Ajmer. And I love Coding
-                            and </p>
-                        <hr />
-                        <a href="https://starinfotechcollege.com/"><button class="btn">Visit</button></a>
+                        <p class="card-text font">I am Pursuring BCA from Star Infotech College, Ajmer. And I love
+                            Coding
+                        </p>
                     </div>
                 </div>
             </div>
 
 
-           
+            <!--iti start-->
 
-                <!--iti start-->
+            <div class="col-md-6 col-lg-3" style="padding-bottom: 30px;">
 
-                 <div class="col-md-6 col-lg-3" style="padding-bottom: 30px;">
-            
-                <div class="card" style="width: rem;">
-                    <div class="outer-box">
-                        <img src="iti.jpeg" class="card-img-top " style="height: 267px;">
+                <div class="card" style="border-radius: 40px;">
+                    <div class="outer-box edu-card edu-sec" style="height: 250px;">
+                        <img src="WhatsApp_Image_2025-12-30_at_7.31.59_PM-removebg-preview.png"
+                            class="card-img-top edu-logo" alt="star Infotech" style="height: 300px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Technical</h3>
-                        <p class="card-text font">I did my Technical eduation In Electrical field from Igmenz private
-                            ITI, Madar, Ajmer</p>
-                        <hr />
-                        <a href="https://igmenzitc.com/"><button class="btn">Visit</button></a>
+                        <p class="card-text font">I did my technical Education in Electrical field from Igmenz pvt ITI,
+                            Ajmer</p>
                     </div>
                 </div>
             </div>
 
-           
 
 
-                <!--sr. secondary section start-->
-           
-                 <div class="col-md-6 col-lg-3 Secondary" style="padding-bottom: 30px;">
-            
-                <div class="card" style="width: rem;">
-                    <div class="outer-box">
-                        <img src="srsecondary.jpg" class="card-img-top " alt="..." style="height: 267px;">
+
+            <!--sr. secondary section start-->
+
+            <div class="col-md-6 col-lg-3 " style="padding-bottom: 30px;">
+
+                <div class="card" style="border-radius: 40px;">
+                    <div class="outer-box edu-card edu-sec" style="height: 250px;">
+                        <img src="school.jpeg" class="card-img-top edu-logo" alt="star Infotech" style="height: 300px;">
                     </div>
                     <div class="card-body">
-                        <h3 class="food">Sr.Secondary</h3>
-                        <p class="card-text font">I did my Sr.Secondary eduation from Topdara Govt. sr. sec. School,
-                            Topdara, Ajmer</p>
-                        <hr />
-                        <a href="https://share.google/gyVQlhpfX6DxzqlIG"><button class="btn">Visit</button></a>
+                        <h3 class="food">Sr. Secondary</h3>
+                        <p class="card-text font">I did my Sr. Secondary education from topdara senior secondary school,
+                            Ajmer</p>
                     </div>
                 </div>
             </div>
 
-              <!--secondary section start-->
-            
-               <div class="col-md-6 col-lg-3 secondary" style="padding-bottom: 30px;">
-                <div class="card" style="width: rem;">
-                    <div class="outer-box">
-                        <img src="secondary.jpg" class="card-img-top" alt="..." style="height: 267px;">
+            <!--secondary section start-->
+
+            <div class="col-md-6 col-lg-3 " style="padding-bottom: 30px;">
+
+                <div class="card" style="border-radius: 40px;">
+                    <div class="outer-box edu-card edu-sec" style="height: 250px;">
+                        <img src="school-removebg-preview.png" class="card-img-top edu-logo" alt="star Infotech"
+                            style="height: 300px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Secondary</h3>
-                        <p class="card-text font">I did my secondary education from Mahatma Gandhi Govt. sr. sec.
-                            School, Ajmer.</p>
-                        <hr />
-                        <a href="https://maps.app.goo.gl/WVso79AkPvYJ9H4T8"><button class="btn">Visit</button></a>
+                        <p class="card-text font">I did my secondary education from Mahatma Gandhi senior secondary
+                            school gulab bari, Ajmer</p>
                     </div>
                 </div>
             </div>
@@ -610,7 +626,7 @@
 
 
     <!--Skills section start-->
-    <div class="container-fluid back1 block" id="skills">
+    <div class="container-fluid back1 block" id="skills" style="margin-top: 300px;">
         <h1 class="my" style="padding-top: 100px; ">MY SKILLS</h1>
 
         <div class="row g-4 mx-auto" style="width: 80%;padding-bottom: 100px;">
@@ -620,11 +636,11 @@
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fab fa-html5 fa-2x" style="color:orangered;"></i>
-                        <h3>HTML</h3>
+                        <img src="html.png" class="img-fluid" style="height: 60px;">
+                        <h3 style="margin-right: 40px; padding-top: 10px;">HTML</h3>
                     </div>
 
-                    <div class="skill-card-white">
+                    <div class="skill-card-white" style="height: 102px;">
                         <div class="content">
                             <p>Its work together with CSS for design and JavaScript for functionality .</p>
                         </div>
@@ -638,8 +654,8 @@
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fab fa-css3 fa-2x" style="color:blue;"></i>
-                        <h3>CSS</h3>
+                        <img src="css.png" class="img-fluid" style="height: 50px;">
+                        <h3 style="padding-top: 10px; padding-right: 60px;">CSS</h3>
                     </div>
 
                     <div class="skill-card-white">
@@ -656,11 +672,11 @@
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fa-brands fa-bootstrap fa-2x" style="color:purple;"></i>
-                        <h3>BOOTSTRAP</h3>
+                        <img src="boot.png" class="img-fluid" style="height: 60px;">
+                        <h3 style="padding-top: 10px;">BOOTSTRAP</h3>
                     </div>
 
-                    <div class="skill-card-white">
+                    <div class="skill-card-white" style="height: 102px;">
                         <div class="content">
                             <p>It helps reduce Coding time while maintaining a Professional design.</p>
                         </div>
@@ -669,13 +685,13 @@
 
             </div>
 
-             <!-- Skill Card 4 -->
+            <!-- Skill Card 4 -->
             <div class="col-sm-12 col-md-6 col-lg-4">
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fa-brands fa-c fa-2x" style="color:rgb(7, 102, 121);"></i>
-                        <h3>C PROGRAMING</h3>
+                        <img src="c_programing.png" class="img-fluid" style="height: 50px;">
+                        <h3 style="padding-top: 10px; padding-left: 10px;">C PROGRAMING</h3>
                     </div>
 
                     <div class="skill-card-white">
@@ -687,13 +703,13 @@
 
             </div>
 
-             <!-- Skill Card 5 -->
+            <!-- Skill Card 5 -->
             <div class="col-sm-12 col-md-6 col-lg-4">
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fa-brands fa-js fa-2x" style="color:rgba(97, 97, 7, 0.37)"></i>
-                        <h3>JAVA SCRIPT</h3>
+                        <img src="js.png" class="img-fluid" style="height: 45px; width: 45px;">
+                        <h3 style="padding-top: 10px; padding-left: 10px;">JAVA SCRIPT</h3>
                     </div>
 
                     <div class="skill-card-white">
@@ -705,13 +721,13 @@
 
             </div>
 
-             <!-- Skill Card 6 -->
+            <!-- Skill Card 6 -->
             <div class="col-sm-12 col-md-6 col-lg-4">
 
                 <div class=" skill-card-white-parent text-center">
                     <div class="d-flex" style="justify-content: center;">
-                        <i class="fa-brands fa-microsoft fa-2x" style="color:#8A2BE2;"></i>
-                        <h3>MS OFFICE</h3>
+                        <img src="micro.png" class="img-fluid" style="height: 50px;">
+                        <h3 style="padding-top: 10px;">MS OFFICE</h3>
                     </div>
 
                     <div class="skill-card-white">
@@ -728,7 +744,7 @@
 
     <!--Certificate section start-->
     <div class="container-fluid back1">
-        <h1 class="my pb-5" id="certificate" style="padding-top: 70px;">MY CERTIFICATES</h1>
+        <h1 class="my pb-5" id="certificate" style="padding-top: 80px;">MY CERTIFICATES</h1>
         <div class="row">
             <div class="col-md-6 col-lg-6">
 
@@ -795,21 +811,20 @@
     <!-- (Hobbies section)-->
 
     <div class="container-fluid back1 block">
-        <div class="row pad mx-auto" id="hobbies" style="width: 80%;">
+        <div class="row pad mx-auto" id="hobbies" style="width: 90%;">
             <h1 class="my">MY HOBBIES</h1>
             <h2 class="favo pb-5">Lets meet with My Favorite Hobbies</h2>
-            <!-- <h2 class="hob">Hobbies</h2> -->
             <br /><br /><br />
 
             <!--First img-->
             <div class="col-md-6 col-lg-3 hobby" style="padding-bottom: 50px;">
                 <div class="card">
-                    <div class="outer-box" >
-                        <img src="cooking.jpg" class="card-img-top " style="height: 280px;">
+                    <div class="outer-box edu-card-1 edu-sec-1">
+                        <img src="cooking.jpg" class="card-img-top img-fluid">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Cooking</h3>
-                        <p class="card-text">I love trying new recipes and Experimenting with diffrent tastes.</p>
+                        <p class="card-text">I love trying new recipes and Experiment with diffrent tastes.</p>
                     </div>
                 </div>
             </div>
@@ -817,25 +832,24 @@
             <!--Second img-->
             <div class="col-md-6 col-lg-3 hobby" style="padding-bottom: 50px;">
                 <div class="card">
-                    <div class="outer-box">
-                        <img src="photography.jpg" class="card-img-top" style="height: 280px;">
+                    <div class="outer-box edu-card-1 edu-sec-1">
+                        <img src="photography.jpg" class="card-img-top img-fluid" style="height: 140px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Photography</h3>
-                        <p class="card-text">Photography is my way of freezing memories and expressing creativity</p>
+                        <p class="card-text">Photography is my way of Freezing Memories.</p>
                     </div>
                 </div>
             </div>
-
             <!--Third img-->
             <div class="col-md-6 col-lg-3 hobby" style="padding-bottom: 50px;">
                 <div class="card">
-                    <div class="outer-box">
-                        <img src="riding.jpg" class="card-img-top" alt="..." style="height: 280px;">
+                    <div class="outer-box edu-card-1 edu-sec-1">
+                        <img src="riding.jpg" class="card-img-top img-fluid" style="height: 140px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Riding</h3>
-                        <p class="card-text">Riding is one of my Favorite hobby. it feel me free </p>
+                        <p class="card-text">Raiding is one of my Favorite hobby. It feel me Free.</p>
                     </div>
                 </div>
             </div>
@@ -843,12 +857,12 @@
             <!--Fourth img-->
             <div class="col-md-6 col-lg-3 hobby" style="padding-bottom: 50px;">
                 <div class="card">
-                    <div class="outer-box">
-                        <img src="traveling.jpg" class="card-img-top" alt="..." style="height: 280px;">
+                    <div class="outer-box edu-card-1 edu-sec-1">
+                        <img src="traveling.jpg" class="card-img-top img-fluid" style="height: 140px;">
                     </div>
                     <div class="card-body">
                         <h3 class="food">Traveling</h3>
-                        <p class="card-text">I love visiting new destination and creating beatuiful Memories.</p>
+                        <p class="card-text">I love visiting new destination and creating beautiful Memories.</p>
                     </div>
                 </div>
             </div>
@@ -858,28 +872,29 @@
 
     <!--footer section (Contact Section)-->
 
-    <div class="container-fluid back2 mx-auto p-5" id="contact">
-        <h1 class="my " style="padding-top: 50px; ">GET-IN-TOUCH</h1>
+    <div class="container-fluid back2 mx-auto" id="contact" style=" background-color: #0c0101;">
+        <h1 class="my " style="padding-top: 50px; color: white; ">GET-IN-TOUCH</h1>
         <center>
-            <h5>I am always open to New Opertunaties and exciting projects. Let's Connect and bring your ideas to life
+            <h5 style="color: white;">I am always open to New Opertunaties and exciting projects. Let's Connect and
+                bring your ideas to life
                 with
                 impectful Creative. </h5>
         </center>
-        <div class="row pt-5 mt-5 mx-auto" style="width: 80%;">
+        <div class="row pt-5 mt-5 " style="margin-left: 90px;">
             <div class="col-md-4 mb-4">
                 <h3 style="color:red;font-size: 30px;">Contact Me</h3>
                 <div class="pad" style=" padding-top:20px;">
                     <div class="row">
                         <div class="col-sm-2 align-content-center">
-                            <i class="fa-brands fa-google fa-envelope fa-2x" style="color:red;"></i>
+                            <img src="google.png" style="height: 50px; width: 50px;">
                         </div>
 
                         <div class="col-sm-10 col-md-10 col-lg-10">
                             <div class="card-body">
-                                <h5 class="card-title " style=" text-decoration: none; color: #000">Email
+                                <h5 class="card-title " style=" text-decoration: none; color: white;">Email
                                 </h5>
-                                <p class="card-text cardtext" style="color:black;font-size: medium;">
-                                    kapilsinghchouhan9778@gmail.com</p>
+                                <p class="card-text cardtext" style="color:black;font-size: medium; color: white;">
+                                    kapilsingh01@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -888,14 +903,14 @@
                 <div class="padding">
                     <div class="row">
                         <div class="col-sm-2 align-content-center">
-                            <strong><i class="fa-brands fa-whatsapp fa-2x" style="color:green;"></i></strong>
+                            <strong><img src="whatsapp.png" style="height: 50px; width: 50px;"></strong>
                         </div>
 
                         <div class="col-sm-10 col-md-10 col-lg-10">
                             <div class="card-body">
-                                <h5 class="card-title " style="text-decoration: none; color: black;">Leave a message
+                                <h5 class="card-title " style="text-decoration: none; color: white;">Leave a message
                                 </h5>
-                                <p class="card-text cardtext" style="color: black ;font-size: medium;">935XXXXX06</p>
+                                <p class="card-text cardtext" style="color: white ;font-size: medium;">935XXXXX06</p>
                             </div>
                         </div>
                     </div>
@@ -905,48 +920,53 @@
                 <ul style="list-style: none; padding: 0px;">
                     <h3 style="color:red;">Navigate</h3>
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
-                            style="font-size: 17px;font-weight: normal;" href="#home">HOME</a>
+                            style="font-size: 17px;font-weight: normal; " href="#home">HOME</a>
                     </li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#about">ABOUT</a></li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#education">EDUCATION</a></li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#skills">SKILLS</a></li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#certificate">CERTIFICATE</a></li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#hobbies">HOBBIES</a></li>
+
                     <li class="nav-item"><a class="nav-link navigate-end tabs"
                             style="font-size: 17px;font-weight: normal;" href="#contact">GET IN TOUCH</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-4">
                 <h3 style="color:red;">Connect</h3>
-                <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><i
-                        class="fa-brands fa-instagram brand fa-insta instagram"></i></a>
+                <a href="https://www.instagram.com/thekapilsinghchouhan.01?igsh=MXU5Y2U4bzM5aTlndA=="><img
+                        src="insta.jpg" style="height: 22px;"></a>
                 <a
-                    href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                        class="fa-brands fa-linkedin brand fa-insta" style="color:rgb(87, 76, 252);"></i></a>
+                    href="https://www.linkedin.com/in/kapil-singh-chouhan-3b1aa5321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="linkdin.png" style="height: 25px;"></a>
 
-                <a href="https://youtube.com/@kapilkivines001?si=yRYuhocHKhctSBN8"><i
-                        class="fa-brands fa-youtube brand fa-insta" style="color:red;"></i></a>
+                <a href="http://www.youtube.com/@codingwith-kapil"><img src="youtub.png" style="height: 27px;"></a>
 
-                <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><i
-                        class="fa-brands fa-x-twitter brand fa-insta" style="color:black;"></i></a>
+                <a href="https://discord.gg/P9fyaKDv"><img src="discode.jpg" style="height: 25px;"></a>
 
-                <a href="https://www.github.com"><i class="fa-brands fa-github brand fa-insta"
-                        style="color:black;"></i></a>
 
-                <a href="https://discord.gg/P9fyaKDv"><i class="fa-brands fa-discord brand fa-insta" style="color: #8A2BE2;"></i></a>
+                <a href="https://x.com/KAPILSINGH0002?t=AE0GqtSBDNkOv0-NOOZW_Q&s=09"><img src="xtwitter.avif"
+                        style="height: 23px;"></a>
+
+                <a href="https://www.github.com"><img src="github.png" style="height: 30px;"></a>
+
             </div>
         </div>
-
     </div>
 
-    <p class="p-3" style="text-align: center; margin-bottom: -40px; background-color: #000; color: white;"> &copy; 2025
-        Kapil Singh Chouhan. All rights are reserved.
-    </p>
+    <p class="p-3" style="text-align: center; margin-bottom: -40px; background-color: #000; color: white;">
+        &copy; 2025 Kapil Singh Chouhan. All rights are reserved. </p>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript">
         $('.js-scroll-trigger').click(function () {
